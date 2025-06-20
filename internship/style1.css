@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #00fff0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00fff0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00fff0;
+}
+
+/* Sections */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  color: #00fff0;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  color: #ffffffcc;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00fff0;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-tags span {
+  background: #1c1c1c;
+  border: 1px solid #00fff0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #00fff0;
+  font-size: 16px;
+}
+.skill-tags span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-tags .icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0, 255, 240, 0.15);
+}
+
+/* Resume Button */
+.btn {
+  background-color: #00fff0;
+  color: #0f2027;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 40px;
+}
